@@ -1,0 +1,100 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+-FONT WEIGHTS:
+DEFAULT:
+Medium: 
+Semi-Bold:
+Bold:
+
+-LINE HEIGHTS:
+DEFAULT:
+Small: 
+Medium: 
+Paragraph Default: 
+Large: 
+
+-Letter Spacing:
+
+
+--- 02 COLORS
+
+-Primary: #10cab7
+-Tints:
+
+-Shades:
+
+-Accents:
+-Greys:
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS 
+Default: 
+Medium:
+
+--- 07 WHITESPACE
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+/* *********************** */
+/* GENERAL COMPONENTS */
+/* *********************** */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 8.4rem 3.2rem 4.8rem 3.2rem;
+  margin: 0 auto;
+}
+.even {
+  background-color: #f3f3f3;
+}
+.header {
+  margin-bottom: 4.8rem;
+}
+.head {
+  font-size: 10rem;
+  text-align: center;
+  color: #e5e5e5;
+  line-height: 0.5;
+}
+.subhead {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(143, 143, 143);
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 3.2rem;
+}
+.grid--portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 3.2rem;
+}

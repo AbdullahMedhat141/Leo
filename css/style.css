@@ -1,0 +1,351 @@
+/* HEDEAR */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 2.4rem auto;
+}
+.logo {
+  width: 6rem;
+}
+.links {
+  position: relative;
+}
+header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.icon {
+  width: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+
+.icon span:first-child {
+  width: 100%;
+}
+.icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+.icon span:nth-child(3) {
+  width: 100%;
+}
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+}
+.links:hover ul {
+  display: block;
+  z-index: 1;
+}
+.links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.links a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #333;
+  transition: 0.3s;
+}
+.links a:hover {
+  padding-left: 25px;
+}
+.links li:not(:last-child) a {
+  border-bottom: 0.5px solid #ddd;
+}
+/* ************************* */
+
+/* HERO*/
+.section-hero {
+  height: calc(100vh - 64px);
+  background-image: url(../imgs/landing.jpg);
+  background-size: cover;
+  position: relative;
+}
+.hero {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 32rem;
+}
+.hero h1 {
+  margin: 0;
+  color: var(--main-color);
+  font-size: 5.2rem;
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+.hero p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+/* ************************* */
+
+/* FEATURES*/
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.feature-icon {
+  font-size: 4.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--main-color);
+  z-index: 1;
+}
+.feature h2 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.feature p {
+  font-size: 1.6rem;
+  color: rgb(142, 141, 141);
+  line-height: 1.8;
+  text-align: center;
+}
+/* ************************* */
+
+/* SERVICES*/
+.services {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8.4rem 3.2rem;
+}
+.grid-2by1-cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8.4rem;
+  padding: 8.4rem 3.2rem 8.4rem 9rem;
+}
+.grid-2by2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8.4rem;
+  row-gap: 3.2rem;
+}
+.service {
+  position: relative;
+}
+.service-icon {
+  font-size: 3.2rem;
+  color: var(--main-color);
+  position: absolute;
+  left: -60px;
+}
+
+.services-h2 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+.services-p {
+  font-size: 1.6rem;
+  color: #777;
+  line-height: 1.8;
+}
+.image-services {
+  position: relative;
+}
+.services-img {
+  width: 260px;
+  height: 350px;
+}
+.image-services::before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: -15%;
+  width: 100px;
+  height: calc(100% + 100px);
+  background-color: var(--secondary-color);
+  z-index: -1;
+}
+/* ************************* */
+
+/* PORTFOLOIO*/
+.part {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fff;
+  gap: 1.8rem;
+}
+.part h2 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.part p {
+  font-size: 1.6rem;
+  color: #777;
+  line-height: 1.6;
+  text-align: start;
+}
+.portfolio-img {
+  width: 100%;
+  height: 25rem;
+}
+.port-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2.4rem;
+}
+
+/* ************************* */
+
+/* ABOUT*/
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20rem;
+}
+.image-about {
+  position: relative;
+  margin-top: 2.4rem;
+}
+.about-img {
+  width: 260px;
+  height: 350px;
+}
+.image-about::before {
+  top: -40px;
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 277px;
+  border-left: 80px solid var(--main-color);
+  border-bottom: 80px solid var(--main-color);
+  z-index: -1;
+  right: -110px;
+}
+.image-about::after {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 80px);
+  top: -40px;
+  left: -20px;
+  z-index: -1;
+}
+.text-about {
+  margin-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+.text1-about {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 2;
+}
+.text2-about {
+  font-size: 1.6rem;
+  color: rgb(143, 143, 143);
+  line-height: 2;
+  padding-top: 2.8rem;
+  position: relative;
+}
+.text2-about::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 300px;
+  height: 2px;
+  top: -3px;
+  left: 0;
+}
+/* ************************* */
+
+/* CONTACT*/
+.contact-section {
+  padding-bottom: 6.4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 9.2rem;
+}
+.text-contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.text1-contact,
+.link-contact {
+  font-size: 3.4rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+.text1-contact {
+  color: var(--secondary-color);
+}
+.link-contact {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.social-contact {
+  color: #000;
+  font-size: 1.6rem;
+}
+.social-contact a:link,
+.social-contact a:visited {
+  color: var(--secondary-color);
+}
+.social-contact a:hover,
+.social-contact a:active {
+  color: #426374;
+}
+/* ************************* */
+/* *FOOTER*/
+.footer {
+  background-color: var(--secondary-color);
+  padding: 3.2rem 0;
+}
+.footer p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.footer p span {
+  color: var(--main-color);
+  font-weight: 700;
+}
+/* ************************* */
